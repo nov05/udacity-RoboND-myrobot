@@ -58,6 +58,7 @@ $ gazebo myworld
 The hello world message and the two-wheeled robot inside a Gazebo World should both launch as follow: 
 ![alt text](images/output.png)
 
-
+* model: U-shape walls
+<img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/Udacity/20250213_nd209_udacity_robotics_nanodegree/2025-02-13%2020_08_18-Udacity%20Robotics%20-%20VMware%20Workstation.jpg" width=800>
     
  
