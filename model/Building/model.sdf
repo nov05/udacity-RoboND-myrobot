@@ -1614,7 +1614,7 @@
         <material>
           <script>
             <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>Gazebo/Bricks</name>
           </script>
           <ambient>0.760784 0.662745 0.627451 1</ambient>
         </material>
