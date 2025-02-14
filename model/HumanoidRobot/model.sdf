@@ -45,13 +45,10 @@
         </geometry>
       </collision>
     </link>
-    <joint name="front_ball_joint" type="ball">
+    <joint name="front_ball_joint" type="fixed">
       <parent>body</parent>
       <child>front_ball</child>
       <pose>0.3 0 0 0 0 0</pose>
-      <axis>
-        <xyz>1 0 0</xyz>
-      </axis>
     </joint>
 
     <!-- Left Ball -->
@@ -72,13 +69,10 @@
         </geometry>
       </collision>
     </link>
-    <joint name="left_ball_joint" type="ball">
+    <joint name="left_ball_joint" type="fixed">
       <parent>body</parent>
       <child>left_ball</child>
       <pose>-0.15 0.26 0 0 0 0</pose>
-      <axis>
-        <xyz>1 0 0</xyz>
-      </axis>
     </joint>
 
     <!-- Right Ball -->
@@ -99,13 +93,29 @@
         </geometry>
       </collision>
     </link>
-    <joint name="right_ball_joint" type="ball">
+    <joint name="right_ball_joint" type="fixed">
       <parent>body</parent>
       <child>right_ball</child>
       <pose>-0.15 -0.26 0 0 0 0</pose>
-      <axis>
-        <xyz>1 0 0</xyz>
-      </axis>
+    </joint>
+
+    <!-- Additional Links to Maintain Equilateral Triangle Structure -->
+    <!-- Link between Front Ball and Left Ball -->
+    <joint name="front_left_joint" type="fixed">
+      <parent>front_ball</parent>
+      <child>left_ball</child>
+    </joint>
+
+    <!-- Link between Front Ball and Right Ball -->
+    <joint name="front_right_joint" type="fixed">
+      <parent>front_ball</parent>
+      <child>right_ball</child>
+    </joint>
+
+    <!-- Link between Left Ball and Right Ball -->
+    <joint name="left_right_joint" type="fixed">
+      <parent>left_ball</parent>
+      <child>right_ball</child>
     </joint>
 
   </model>
