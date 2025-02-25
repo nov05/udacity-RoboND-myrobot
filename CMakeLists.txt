@@ -7,7 +7,7 @@ if (NOT ignition-gazebo6_FOUND) ## ignition-gazebo6 is not found, try finding ga
   message(STATUS "Using Gazebo Classic")
 else()
   message(STATUS "Using ignition-gazebo6")
-endif
+endif()
 
 include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
