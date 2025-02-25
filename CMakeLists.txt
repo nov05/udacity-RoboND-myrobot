@@ -5,7 +5,7 @@ find_package(ignition-gazebo6 QUIET) ## Try to find ignition-gazebo6 first
 if (NOT ignition-gazebo6_FOUND) ## ignition-gazebo6 is not found, try finding gazebo
   find_package(gazebo REQUIRED)
   message(STATUS "Using Gazebo Classic")
-else
+else()
   message(STATUS "Using ignition-gazebo6")
 endif
 
